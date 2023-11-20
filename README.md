@@ -1,4 +1,5 @@
 # Ex03 Time Table
+# DATE : 12.10.23
 
 ## AIM
 To write a html webpage page to display your slot timetable.
@@ -23,123 +24,141 @@ Add your timetable using ```<td>``` tag.
 Execute the program using runserver command.
 
 ## CODE
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Second Semester Timetable</title>
-        <style>
-            /* Add some basic CSS styling to make it visually appealing */
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f2f2f2;
-                margin: 0;
-                padding: 20px;
-            }
-    
-            h1 {
-                text-align: center;
-            }
-    
-            table {
-                width: 80%;
-                margin: 0 auto;
-                border-collapse: collapse;
-                background-color: white;
-                border-radius: 5px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            }
-    
-            th, td {
-                padding: 10px;
-                text-align: center;
-            }
-    
-            th {
-                background-color: #333;
-                color: rgb(255, 255, 255);
-            }
-    
-            tr:nth-child(even) {
-                background-color: #ffffff;
-            }
-    
-            /* Add black color background to the first row from the left and the five columns of that row */
-            tr:first-child {
-                background-color: black;
-                color: rgb(0, 0, 0);
-            }
-            tr:first-child td:nth-child(1), tr:first-child td:nth-child(2), tr:first-child td:nth-child(3), tr:first-child td:nth-child(4), tr:first-child td:nth-child(5), tr:first-child td:nth-child(6) {
-                background-color: black;
-                color: rgb(0, 0, 0);
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Semester Timetable</h1>
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-            </tr>
-            <tr>
-                <td>8:00 AM - 10:00 AM</td>
-                <td>FWAD</td>
-                <td>CD</td>
-                <td>DPSD</td>
-                <td>CA</td>
-                <td>Mathematics</td>
-                <td>C++</td>
-            </tr>
-            <tr>
-                <td>10:00 AM - 12:00 AM</td>
-                <td>ED</td>
-                <td>MPMC</td>
-                <td>TOC</td>
-                <td>INT TO DS</td>
-                <td>K & DOR</td>
-                <td>IOT</td>
-            </tr>
-            <tr>
-                <td>12:00 AM - 1:00 PM</td>
-                <td>Lunch</td>
-                <td>Lunch</td>
-                <td>Lunch</td>
-                <td>Lunch</td>
-                <td>Lunch</td>
-                <td>Lunch</td>
-            </tr>
-            <tr>
-                <td>1:00 PM - 3:00 PM</td>
-                <td>FWAD</td>
-                <td>CA</td>
-                <td>CD</td>
-                <td>DPSD</td>
-                <td>MATHEMATICS</td>
-                <td>Elective Course</td>
-            </tr>
-            <tr>
-                <td>3:00 PM - 5:00 PM</td>
-                <td>MPMC</td>
-                <td>TOC</td>
-                <td>IOT</td>
-                <td>ED</td>
-                <td>INT TO DS</td>
-                <td>K & DOR</td>
-            </tr>
-        </table>
-    </body>
-    </html>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Timetable</title>
+    <style>
+        .table1{
+            background-color: cyan;
+            border-color: gray;
+            text-align: center;
+            width: 800px;
+            height: 250px;
+        }
+        .table2{
+            border-color: gray;
+            text-align: center;
+            width: 800px;
+            height: 250px; 
+        }
+        .name{
+            padding-left: 185px;
+        }
+        .row1{
+            background-color: yellow;
+        }
+        .c1{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <img src = "http://training.saveetha.in/pluginfile.php/1/core_admin/logo/0x150/1623542614/logo_1.png" width = "800" height="150">
+    <h3 class = "name">SLOT TIMETABLE - SHREENIVASH V (2122210400153)</h3>
+    <table border="1" class = "table1">
+        <tr class = "row1">
+            <th class="c1">Day/Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <td class="c1">8-10</td>
+            <td>DAA</td>
+            <td>MC</td>
+            <td>AQT</td>
+            <td>FWAD</td>
+            <td>FS</td>
+            <td>FWAD</td>
+        </tr>
+        <tr>
+            <td class="c1">10-12</td>
+            <th colspan="2">FS</th>
+            <td>GP</td>
+            <td>FS</td>
+            <td>DAA/DW</td>
+            <td>CNS</td>
+            
+        </tr>
+        <tr>
+            <td class="c1">12-1</td>
+            <th colspan="6">LUNCH BREAK</th>
+        </tr>
+        <tr>
+            <td class="c1">1-3</td>
+            <td>FS</td>
+            <td>DS</td>
+            <td>DW</td>
+            <td>GP</td>
+            <th colspan="2">FS</th>
+            
+        </tr>
+        <tr>
+            <td class="c1">3-5</td>
+            <td>CNS</td>
+            <td>FWAD</td>
+            <th colspan="2">FS</th>
+            <td>MC</td>
+            <td>DS</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table border="1" class="table2">
+        <tr>
+            <th>S.No.</th>
+            <th>Subject Code</th>
+            <th>Subject Name</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>19AI414</td>
+            <td>Fundamentals of Web Applications Development (FWAD)</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>19CS402</td>
+            <td>Design Analysis and Algorithm (DAA)</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>19CS521</td>
+            <td>Cryptography and Network Security (CNS)</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>19CS517</td>
+            <td>Mobile Computing (MC)</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>19AI513</td>
+            <td>Game Programming (GP)</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>19EY704</td>
+            <td>Advance Quantitative and Logical Reasoning (AQT)</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
 
 ## OUTPUT
-![Web capture_5-10-2023_978_](https://github.com/Kathir-2703/FWAD-EXP-3/assets/64436376/ab3e616f-a571-40cc-8b30-33916a8ab94a)
+![IMG_20231120_103712](https://github.com/Srinixx/SlotTimeTable/assets/132982592/2f04006a-5740-4707-a394-3241c2baef06)
 
-## HTML VALIDATOR
-<img width="960" alt="KFWAD1output pdf" src="https://github.com/Kathir-2703/FWAD-EXP-3/assets/64436376/198f2720-2fb6-44f8-89c9-114ac9c765f2">
+![image](https://github.com/Srinixx/SlotTimeTable/assets/132982592/766e902e-a9e6-4e86-bc5c-8b82758ea654)
+
+
+
 
 ## RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
